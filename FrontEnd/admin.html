@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bike sharing - Vecchia Zia</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Bike sharing - Vecchia Zia</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#listino">Listino prezzi</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#storico">Storico</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="#noleggio">Nuovo noleggio</a>
+                    </li>                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Bike sharing - Vecchia Zia</h1>
+                        <hr class="star-light">
+                        <span class="skills">Noleggio di biciclette a Pavia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- listino Section -->
+    <section id="listino">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Listino</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 listino-item">
+                        <div class="caption">
+                            <div class="caption-content text-center">
+                                <h1>Costo: 5 euro l'ora, 15 euro al giorno</h1>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storico Section -->
+    <section class="success" id="storico">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Storico</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <table>
+                        <thead>
+                            <td>Nome</td>
+                            <td>Cognome</td>
+                            <td>Telefono</td>
+                            <td>Orario affitto</td>
+                            <td>Orario ritorno previsto</td>
+                            <td>Bicicletta</td>                            
+                        </thead>
+                        <tbody id="data_list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noleggio Section -->
+    <section class="success" id="noleggio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Nuovo noleggio</h2>
+                    <hr class="star-light">
+                </div>
+            </div><form>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nome</td>
+                                <td><input type="text" name="name"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Cognome</td>
+                                <td><input type="text" name="surname"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Telefono</td>
+                                <td><input type="text" name="phone"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Orario arrivo</td>
+                                <td><input type="text" name="arriving"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Orario ritorno previsto</td>
+                                <td><input type="text" name="leaving"></input></td>
+                            </tr>    
+                            <tr>
+                                <td>Tipo bicicletta</td>
+                                <td><input type="text" name="bike"></input></td>
+                            </tr>                     
+                        </thead>
+                        <tbody id="data_list">
+                        </tbody>
+                    </table>
+                </div>
+            <div class="row">
+                   <div class="row">
+                        <div class="col-lg-2 col-lg-offset-8">
+                        <button type="submit" class="btn btn-success btn-lg">Inserisci</button>
+                    </div>
+                </div>
+            </div></form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <h3>Location</h3>
+                        <p>Via Francesco, 1
+                            <br>Pavia (PV)</p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Noleggio Vecchia Zia</h3>
+                        <p>Siamo a Pavia e noleggiamo biciclette della vecchia zia morta</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            function list_rent() {
+                    $.ajax({
+                            type: "GET",
+                            url: "http://172.20.134.69:3000/rents"
+                    }).done(function(res) {
+                            $("#data_list").html("");
+
+                            res.data.forEach(function(r) {
+                                    $("#data_list").append("<tr><td>" + r.name + "</td>");
+                                    $("#data_list").append("<td>" + r.surname + "</td>");
+                                    $("#data_list").append("<td>" + r.phone + "</td>");
+                                    $("#data_list").append("<td>" + r.arriving + "</td>");
+                                    $("#data_list").append("<td>" + r.leaving + "</td>");
+                                    $("#data_list").append("<td>" + r.bike + "</td></tr>");
+                            });
+                    });
+            }
+
+            $(document).ready(function() {
+                    list_rent();
+
+                    $("#send_data").click(function() {
+                            $.ajax({
+                              method: "POST",
+                              url: "http://172.20.134.69:3000/rents",
+                              data: {
+                                name: $("#name").val(),
+                                surname: $("#surname").val(),
+                                phone: $("#phone").val(),
+                                arriving: $("#arriving").val(),
+                                leaving: $("#leaving").val(), 
+                                bike: $("#bike").val(),
+                                }
+                            })
+                              .done(function( msg ) {
+                                    $("#name").val("");
+                                    $("#surname").val("");
+                                    $("#phone").val("");
+                                    $("#arriving").val("");
+                                    $("#leaving").val("");
+                                    $("#bike").val("");
+                                    list_rent();
+                              });
+                    });
+            });
+
+
+/*
+                $.get("http://172.20.134.69:3000/rents", function( data ) {
+                  //$( ".result" ).html( data );
+                  console.log( "Load was performed." );
+                });/*
+        /*
+            $.ajax({
+              method: "GET",
+              url: "51.255.174.184/rents"
+            })
+              .done(function( msg ) {
+                console.log(msg);
+              });
+            /*
+            $("#send_data").click(function() {
+            $.ajax({
+              method: "POST",
+              url: "insert_data.php",
+              data: { store1: $("#store1").val(), store2: $("#store2").val(), store3: $("#store3").val()}
+            })
+              .done(function( msg ) {
+                    $("#store1").val("");
+                    $("#store2").val("");
+                    $("#store3").val("");
+
+                    alert("Dati inseriti!");
+              });
+            });*/
+        }); 
+    </script>
+
+</body>
+
+</html>
