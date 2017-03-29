@@ -4,19 +4,19 @@ var should = require("should");
 // Example:
 // Common parameters: apiaddress="http://localhost:3000"
 // Script usage: mocha api-builder/.generator/ecommerce/mocha/brand.js
-// apiaddress="http://localhost:80" mocha mocha/rents.insert.js
+// apiaddress="http://localhost:80" mocha mocha/rent.insert.js
 
 var apiaddress = process.env.apiaddress;
 
 var server = supertest.agent(apiaddress);
 
-describe(`Rents`, function () {
+describe('Rents', function () {
     var access_token = null;
 
     // Get access_token
 
     	context("Insert rent", function () {
-        	it(`should return a rent object`, function (done) {
+        	it('should return a rent object', function (done) {
 			server
 				.post("/rents")
 				.send({
