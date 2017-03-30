@@ -96,7 +96,7 @@
                 <div class="col-sm-12 listino-item">
                         <div class="caption">
                             <div class="caption-content text-center">
-                                <h1>Costo: 5 euro l'ora, 15 euro al giorno</h1>
+                                <h1>Costo: <span id="costo_ora"></span> euro l'ora, 15 euro al giorno</h1>
                             </div>
                         </div>
                 </div>
@@ -222,8 +222,13 @@
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
 
+    <script src="js/_script.js"></script>
+    
+
     <script>
         $(document).ready(function() {
+            $("#costo_ora").html(costoOra());
+
             function list_rent() {
                     $.ajax({
                             type: "GET",
